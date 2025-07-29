@@ -92,20 +92,33 @@
     }
 
     /* Sections */
-    section {
-      padding: 60px 20px;
-      text-align: center;
-    }
+ /* Sections */
+section {
+  padding: 60px 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-    section:nth-child(even) {
-      background-color: #f4f4f4;
-    }
+section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
 
-    section h2 {
-      font-size: 28px;
-      color: #05386B;
-      margin-bottom: 20px;
-    }
+section:nth-child(even) {
+  background-color: #f4f4f4;
+}
+
+section h2 {
+  font-size: 28px;
+  color: #05386B;
+  margin-bottom: 20px;
+  transition: color 0.3s ease, letter-spacing 0.3s ease;
+}
+
+section h2:hover {
+  color: #379683;
+  letter-spacing: 1px;
+}
 
     /* WhatsApp Button */
     .whatsapp-float {
